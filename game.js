@@ -11,12 +11,10 @@ const hand_options = ["rock", "paper", "scissors"];
 let user_score_temp = 0;
 let ai_score_temp = 0;
 
-// Getting input from user
 option_selector.forEach((option) => {
   option.addEventListener("click", () => process_input(option.alt));
 });
 
-// Processing input
 function process_input(option) {
   user_img.src = `assets/${option}-hand.png`;
   const ai_hand = hand_options[Math.floor(Math.random() * 3)];
@@ -24,7 +22,6 @@ function process_input(option) {
   compare_hands(option, ai_hand);
 }
 
-// Generating random hand image for AI
 function genetating_hand_for_ai(hand) {
   ai_img.src = `assets/${hand}-hand.png`;
 }
@@ -43,7 +40,7 @@ function compare_hands(user_hand, ai_hand) {
 }
 
 function checking_score(user, ai) {
-  if (user === "5" || ai === "5") {
+  if (user === "3" || ai === "3") {
     options.style.visibility = "hidden";
     replay.style.visibility = "visible";
   }

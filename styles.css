@@ -8,33 +8,16 @@ body {
   background: url(assets/bg.png) repeat center center fixed;
 }
 h1 {
-  padding-top: 70px;
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
   color: rgb(90, 37, 192);
-  font-weight: 900;
-}
-img[alt="logo"] {
-  padding-top: 10px;
-  padding-left: 200px;
-  height: 450px;
-  width: 450px;
+  font-weight: 2000;
 }
 .play-button {
   display: flex;
   justify-content: flex-end;
   color: white;
-  font-size: 30px;
-  font-weight: 900;
-  padding-left: 1100px;
-  padding-right: 200px;
+  font-size: 45px;
+  font-weight: 2000;
   cursor: pointer;
-}
-img[alt*="play"] {
-  bottom: 3px;
-  width: 30px;
-  height: 30px;
-  padding-top: 10px;
-  padding-left: 100px;
-  padding-right: 10px;
 }
